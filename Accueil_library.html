@@ -1,0 +1,45 @@
+<!DOCTYPE html >
+<html lang="FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="library.css">
+    <script src="Accueil_libary.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   
+
+    
+    <title>Library</title>
+</head>
+<body>
+    <p><h1>Bonjour</h1></p>
+    <section class="menu">
+        <div>
+                <a href="#javascript:void(0)" class="cta"  onclick="modal(hidden)">Recherche</a> 
+        </div>
+        <div>
+            <nav class="nav_envoyer">
+                <input type="text" class="saisie" placeholder="Titre" id="titre"></input>
+                <input type="text" class="saisie" placeholder="Auteur" id="auteur"></input>
+                <input type="text" class="saisie" placeholder="Pages" id="pages"></input>
+                <input type="button" class="button"   id="envoyer" value="Envoyer" onclick="addBook()"></input>
+            </nav>
+        </div>
+    </section>
+    <div id="hidden">
+       
+        <div>
+            <div>
+                <a href="javascript:void(0)" class="cta" id="close" onclick="modal(hidden)">Fermer</a>
+            </div>
+            <nav id="modal">
+                <input type="text" class="saisie" placeholder="Titre" id="titreResearch"></input>
+                <input type="text" class="saisie" placeholder="Auteur" id="auteurResearch"></input>
+                <input type="button" class="button" id="research" value="Rechercher" onclick="launchResearch()"></input>
+               
+            </nav>
+        </div>
+    </div>
+
+</body>
+</html>
